@@ -35,7 +35,7 @@ enum whiteTemp {
 
 CRGB leds[NUM_LIGHTS][NUM_LEDS];
 
-Rgbw rgbw = Rgbw(
+PROGMEM Rgbw rgbw = Rgbw(
   NATURAL_WHITE,
   kRGBWBoostedWhite,
   W3
