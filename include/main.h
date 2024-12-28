@@ -5,8 +5,8 @@
 
 //Lights
 #define NUM_LIGHTS            2
-#define LIGHT_BRIGTHNESS      128
 #define LIGHT_STATE_COUNT     3
+#define LIGHT_BRIGTHNESS      128
 
 enum lightSide {
   LH,
@@ -26,9 +26,6 @@ lightState lightStates[]      = {LIGHT_OFF, LIGHT_OFF};
 #define MAX_POWER_MA          800   //mA
 #define DATA_PIN_LH           0
 #define DATA_PIN_RH           2
-
-typedef SK6812<DATA_PIN_LH, RGB> ControllerTLH;
-typedef SK6812<DATA_PIN_RH, RGB> ControllerTRH;
 
 enum whiteTemp {
   WARM_WHITE                  = 2700,
