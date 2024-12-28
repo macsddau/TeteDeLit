@@ -2,12 +2,9 @@
 #include <Arduino.h>
 
 void setup() {
-  delay(1000);
   // put your setup code here, to run once:
-	Serial.begin(115200);
-
-  FastLED.addLeds(&rgbEmuLH, leds[LH], NUM_LEDS);
-  FastLED.addLeds(&rgbEmuRH, leds[RH], NUM_LEDS);
+  FastLED.addLeds<SK6812, DATA_PIN_LH, RGB>(leds[LH], NUM_LEDS).setRgbw(rgbw);
+  FastLED.addLeds<SK6812, DATA_PIN_RH, RGB>(leds[RH], NUM_LEDS).setRgbw(rgbw);
 
   pinMode(buttonPins[LH], INPUT_PULLUP);
   pinMode(buttonPins[RH], INPUT_PULLUP);
@@ -15,6 +12,8 @@ void setup() {
   FastLED.clear();
   FastLED.setBrightness(LIGHT_BRIGTHNESS);
   FastLED.setMaxPowerInVoltsAndMilliamps(5, MAX_POWER_MA);
+
+  delay(2000);
 }
 
 void loop() {
@@ -57,8 +56,7 @@ void loop() {
     }
   }
 
-//  FastLED.show();
-
+  FastLED.show();
 }
 
 // utilities

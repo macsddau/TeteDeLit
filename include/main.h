@@ -32,20 +32,17 @@ typedef SK6812<DATA_PIN_RH, RGB> ControllerTRH;
 
 enum whiteTemp {
   WARM_WHITE                  = 2700,
-  NURAL_WHITE                 = 4000,
+  NATURAL_WHITE               = 4000,
   COLD_WHITE                  = 6000
 };
 
 CRGB leds[NUM_LIGHTS][NUM_LEDS];
 
 Rgbw rgbw = Rgbw(
-  NURAL_WHITE,
+  NATURAL_WHITE,
   kRGBWBoostedWhite,
   W3
 );
-
-static RGBWEmulatedController<ControllerTLH,RGB> rgbEmuLH(rgbw);
-static RGBWEmulatedController<ControllerTRH,RGB> rgbEmuRH(rgbw);
 
 // buttons
 #define BUTTON_PIN_LH         4
@@ -54,7 +51,6 @@ static RGBWEmulatedController<ControllerTRH,RGB> rgbEmuRH(rgbw);
 
 const int buttonPins[]        = {BUTTON_PIN_LH, BUTTON_PIN_RH};
 int buttonStates[]            = {HIGH, HIGH};
-unsigned long buttonPulses[]  = {0, 0};
 unsigned long buttonTimes[]   = {0, 0};
 
 // Effects
