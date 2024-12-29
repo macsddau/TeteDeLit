@@ -7,7 +7,7 @@
 #include <TeteDeLit.h>
 
 /**
- * void setLightOff(int side)
+ * void setLightOff(truct CRGB * ledArray)
  * \brief Turn off the light
 */
 void setLightOff(struct CRGB * ledArray) {
@@ -16,7 +16,7 @@ void setLightOff(struct CRGB * ledArray) {
 }
 
 /**
- * void setLightNight(int side)
+ * void setLightNight(truct CRGB * ledArray)
  * \brief Turn on the light in night mode
 */
 void setLightNight(struct CRGB * ledArray) {
@@ -30,7 +30,7 @@ void setLightNight(struct CRGB * ledArray) {
 }
 
 /**
- * void setLightOn(int side)
+ * void setLightOn(truct CRGB * ledArray)
  * \brief Turn on the light
 */
 void setLightOn(struct CRGB * ledArray) {
