@@ -1,3 +1,4 @@
+/* main.h */
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
@@ -65,4 +66,4 @@ static void setLightOff(int side);
 static void setLightNight(int side);
 static void setLightOn(int side);
 
-#endif  // _MAIN_H_
+#endif  // !_MAIN_H_
