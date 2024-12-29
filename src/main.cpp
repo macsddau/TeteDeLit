@@ -1,76 +1,111 @@
-#include <main.h>
+/**
+ * @file main.cpp
+ * @author d.macsddau
+ * @copyright (c)2024, d.macsddau
+ * @version 0.01
+*/
+#include <TeteDeLit.h>
 #include <Arduino.h>
 
+/**
+ * lightStates
+ * @brief Array to store current lights states.
+ * 
+ * Initilal state with lights off.
+*/
+lightState lightStates[]      = {LIGHT_OFF, LIGHT_OFF};
+
+/**
+ * leds
+ * @brief The array where is store the LEDs
+*/
+CRGB leds[NUM_LIGHTS][NUM_LEDS];
+
+/**
+ * switchStates
+ * @brief Array with swiches states.
+*/
+int switchStates[] = {HIGH, HIGH};
+
+/**
+ * switchTimes
+ * @brief Array with switches times.
+*/
+unsigned long switchTimes[]   = {0, 0};
+
+/**
+ * \fn void setup()
+ * \brief starup function.
+*/
 void setup() {
-  // put your setup code here, to run once:
+  //! add leds arrays to led controller with our custom rgbw definition.
   FastLED.addLeds<SK6812, DATA_PIN_LH, RGB>(leds[LH], NUM_LEDS).setRgbw(rgbw);
   FastLED.addLeds<SK6812, DATA_PIN_RH, RGB>(leds[RH], NUM_LEDS).setRgbw(rgbw);
 
-  pinMode(buttonPins[LH], INPUT_PULLUP);
-  pinMode(buttonPins[RH], INPUT_PULLUP);
+  //! setup input pins
+  pinMode(switchPins[LH], INPUT_PULLUP);
+  pinMode(switchPins[RH], INPUT_PULLUP);
 
+  //! additional setups for leds rendering.
   FastLED.clear();
   FastLED.setBrightness(LIGHT_BRIGTHNESS);
   FastLED.setMaxPowerInVoltsAndMilliamps(5, MAX_POWER_MA);
 
+  //! add some delays in case of setup failure.
   delay(2000);
 }
 
+/**
+ * \fn void loop()
+ * \brief Main loop.
+*/
 void loop() {
-  // put your main code here, to run repeatedly:
+  //! temporary switch state.
   int state;
 
-  for (int l = LH; l <= RH; l++) { 
-    state = digitalRead(buttonPins[l]);
+  //! loop for each ligth side.
+  for (int l = LH; l <= RH; l++) {
+    //! Read the light switch.
+    state = digitalRead(switchPins[l]);
 
-    if (state != buttonStates[l]) {
+    //! Compare the current state with previous stored state.
+    if (state != switchStates[l]) {
+      //! Pullup ! Normaly open switch ! LOW when pressed !
       if (state == LOW) {
-        buttonTimes[l] = millis();
+        //! momorize the time.
+        switchTimes[l] = millis();
       } else {
-        if (millis() - buttonTimes[l] < LONG_PULSE) {
-          //short pulse
+        //! switch is released. Compare time value to know how long it was pressed. 
+        if (millis() - switchTimes[l] < LONG_PULSE) {
+          //! Short pulse
           switch(lightStates[l]) {
-            case LIGHT_OFF:
-              setLightNight(l);
+            case LIGHT_OFF: //!< Light off + short pluse => turn on for night mode
+              setLightNight(leds[l]);
               lightStates[l] = LIGHT_NIGHT;
               break;
-            default:
-              setLightOff(l);
+            default: //!< Light on (full or night) + short pulse => turn off the light
+              setLightOff(leds[l]);
               lightStates[l] = LIGHT_OFF;
-            }
+          }
         } else {
-          //long pulse
+          //! Long pulse
           switch(lightStates[l]) {
-            case LIGHT_ON:
-              setLightNight(l);
+            case LIGHT_ON: //!< Light on (full) + long pulse => switch to night mode
+              setLightNight(leds[l]);
               lightStates[l] = LIGHT_NIGHT;
               break;
-            default:
-              setLightOn(l);
+            default: //!< Ligth off or night + long pulse => turn on or switch to full mode
+              setLightOn(leds[l]);
               lightStates[l] = LIGHT_ON;
           }
         }
       }
 
-      buttonStates[l] = state;
+      //! save the switch state for next time
+      switchStates[l] = state;
     }
   }
 
+  //! render the light according to settings and user action.
   FastLED.show();
-}
-
-// utilities
-static void setLightOff(int side) {
-  fill_solid(leds[side], NUM_LEDS, CRGB::Black);
-}
-
-static void setLightNight(int side) {
-  fill_solid(leds[side], NUM_LEDS, CRGB::Red);
-  for (int l = 0; l < NUM_LEDS; l++) {
-    leds[side][l].nscale8(nightLeds[l]);
-  }
-}
-
-static void setLightOn(int side) {
-  fill_solid(leds[side], NUM_LEDS, CRGB::White);
 }
