@@ -101,42 +101,25 @@ Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Prototypes</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>function defined in <a class="el" href="TeteDeLit_8cpp.html">TeteDeLit.cpp</a> </p>
 </div></td></tr>
-<tr class="memitem:a921912d004351f7c3c7354b00b5721ef" id="r_a921912d004351f7c3c7354b00b5721ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a921912d004351f7c3c7354b00b5721ef">setLightOff</a> (struct CRGB *ledArray)</td></tr>
-<tr class="memdesc:a921912d004351f7c3c7354b00b5721ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off the light.  <br /></td></tr>
-<tr class="separator:a921912d004351f7c3c7354b00b5721ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3719ab88c122de7300027e22824c4343" id="r_a3719ab88c122de7300027e22824c4343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a3719ab88c122de7300027e22824c4343">setLightNight</a> (struct CRGB *ledArray)</td></tr>
-<tr class="memdesc:a3719ab88c122de7300027e22824c4343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the light in night mode.  <br /></td></tr>
-<tr class="separator:a3719ab88c122de7300027e22824c4343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba3c57a8ec54f779bff21e1d577e92a0" id="r_aba3c57a8ec54f779bff21e1d577e92a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#aba3c57a8ec54f779bff21e1d577e92a0">setLightOn</a> (struct CRGB *ledArray)</td></tr>
-<tr class="memdesc:aba3c57a8ec54f779bff21e1d577e92a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the light.  <br /></td></tr>
-<tr class="separator:aba3c57a8ec54f779bff21e1d577e92a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Patterns</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Leds patterns </p>
-</div></td></tr>
-<tr class="memitem:add38ad447353499d70b6eeffbc18a22e" id="r_add38ad447353499d70b6eeffbc18a22e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#add38ad447353499d70b6eeffbc18a22e">nightPattern</a> []</td></tr>
-<tr class="memdesc:add38ad447353499d70b6eeffbc18a22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Night led pattern.  <br /></td></tr>
-<tr class="separator:add38ad447353499d70b6eeffbc18a22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ed150b2e85cdecff7cd67f05ddd25e" id="r_a71ed150b2e85cdecff7cd67f05ddd25e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a71ed150b2e85cdecff7cd67f05ddd25e">setLightOff</a> (CRGB *pleds, const int *<a class="el" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>, uint8_t numStrips)</td></tr>
+<tr class="memdesc:a71ed150b2e85cdecff7cd67f05ddd25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">! Turn off the light  <br /></td></tr>
+<tr class="separator:a71ed150b2e85cdecff7cd67f05ddd25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04f7fef089db3881b36de38bd9d8be4" id="r_ac04f7fef089db3881b36de38bd9d8be4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#ac04f7fef089db3881b36de38bd9d8be4">setLightNight</a> (CRGB *pleds, const int *<a class="el" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>, uint8_t numStrips, const uint8_t *pattern)</td></tr>
+<tr class="memdesc:ac04f7fef089db3881b36de38bd9d8be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the light in night mode.  <br /></td></tr>
+<tr class="separator:ac04f7fef089db3881b36de38bd9d8be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06d5b267a12bd90de8968489af121ca" id="r_ad06d5b267a12bd90de8968489af121ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#ad06d5b267a12bd90de8968489af121ca">setLightOn</a> (CRGB *pleds, const int *<a class="el" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>, uint8_t numStrips)</td></tr>
+<tr class="memdesc:ad06d5b267a12bd90de8968489af121ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the light.  <br /></td></tr>
+<tr class="separator:ad06d5b267a12bd90de8968489af121ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Lights</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>Definition for lights. </p>
 </td></tr>
-<tr class="memitem:a59ce09f1ecc86341f668475f4aaeffca" id="r_a59ce09f1ecc86341f668475f4aaeffca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a59ce09f1ecc86341f668475f4aaeffca">NUM_LIGHTS</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:a59ce09f1ecc86341f668475f4aaeffca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of lights. One on each side of the bed.  <br /></td></tr>
-<tr class="separator:a59ce09f1ecc86341f668475f4aaeffca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc30bf8b0b44596c72c94d191d48353" id="r_afdc30bf8b0b44596c72c94d191d48353"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#afdc30bf8b0b44596c72c94d191d48353">LIGHT_STATE_COUNT</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memdesc:afdc30bf8b0b44596c72c94d191d48353"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of light states.  <br /></td></tr>
 <tr class="separator:afdc30bf8b0b44596c72c94d191d48353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97425bb4347fd7753f34a07c8e98015a" id="r_a97425bb4347fd7753f34a07c8e98015a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a97425bb4347fd7753f34a07c8e98015a">LIGHT_BRIGTHNESS</a>&#160;&#160;&#160;128</td></tr>
 <tr class="memdesc:a97425bb4347fd7753f34a07c8e98015a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum light brighness.  <br /></td></tr>
 <tr class="separator:a97425bb4347fd7753f34a07c8e98015a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94c7262ada4c6d082613b2211976a0c8" id="r_a94c7262ada4c6d082613b2211976a0c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a94c7262ada4c6d082613b2211976a0c8">lightSide</a> { <a class="el" href="TeteDeLit_8h.html#a94c7262ada4c6d082613b2211976a0c8aadab8e0111f669b137544a4ecce92997">LH</a>
-, <a class="el" href="TeteDeLit_8h.html#a94c7262ada4c6d082613b2211976a0c8a9e2b6a13474c92e190410985531c8a1d">RH</a>
- }</td></tr>
-<tr class="memdesc:a94c7262ada4c6d082613b2211976a0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerator for light side.  <a href="TeteDeLit_8h.html#a94c7262ada4c6d082613b2211976a0c8">More...</a><br /></td></tr>
-<tr class="separator:a94c7262ada4c6d082613b2211976a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0453581774a68c9d0766fc8ab7a2524d" id="r_a0453581774a68c9d0766fc8ab7a2524d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a0453581774a68c9d0766fc8ab7a2524d">lightState</a> { <a class="el" href="TeteDeLit_8h.html#a0453581774a68c9d0766fc8ab7a2524dafe86dd14e81e1c145562ecf1daf98b30">LIGHT_OFF</a>
 , <a class="el" href="TeteDeLit_8h.html#a0453581774a68c9d0766fc8ab7a2524da00aeb2fb0eca73bc930e6c979933b258">LIGHT_NIGHT</a>
 , <a class="el" href="TeteDeLit_8h.html#a0453581774a68c9d0766fc8ab7a2524dab51f396c46963682ee6170db4991f4e8">LIGHT_ON</a>
@@ -147,18 +130,50 @@ Variables</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Leds</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>Leds definitions. </p>
 </td></tr>
-<tr class="memitem:a4c4ae9a4146ce8d6a5debc90300d9abd" id="r_a4c4ae9a4146ce8d6a5debc90300d9abd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a4c4ae9a4146ce8d6a5debc90300d9abd">NUM_LEDS</a>&#160;&#160;&#160;120</td></tr>
-<tr class="memdesc:a4c4ae9a4146ce8d6a5debc90300d9abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of led on a strip (a side of the bed have one strip).  <br /></td></tr>
-<tr class="separator:a4c4ae9a4146ce8d6a5debc90300d9abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44bec24d21dd3edce2ad5eb0b70da963" id="r_a44bec24d21dd3edce2ad5eb0b70da963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a44bec24d21dd3edce2ad5eb0b70da963">MAX_POWER_MA</a>&#160;&#160;&#160;800</td></tr>
+<tr class="memitem:a42ddd6c880dee44e91785dfa53f7bf9b" id="r_a42ddd6c880dee44e91785dfa53f7bf9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a42ddd6c880dee44e91785dfa53f7bf9b">DATA_PIN_1</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memdesc:a42ddd6c880dee44e91785dfa53f7bf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GPIO pin used for leds strips.  <br /></td></tr>
+<tr class="separator:a42ddd6c880dee44e91785dfa53f7bf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403fd820fbe0c26e193fea531aacdc8f" id="r_a403fd820fbe0c26e193fea531aacdc8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a403fd820fbe0c26e193fea531aacdc8f">DATA_PIN_2</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:a403fd820fbe0c26e193fea531aacdc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7e4bc0d828afee54feb9cbe20a208b" id="r_a5e7e4bc0d828afee54feb9cbe20a208b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a5e7e4bc0d828afee54feb9cbe20a208b">DATA_PIN_3</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a5e7e4bc0d828afee54feb9cbe20a208b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0d7e2b20f8ad36e9f9c14cc9170612" id="r_add0d7e2b20f8ad36e9f9c14cc9170612"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#add0d7e2b20f8ad36e9f9c14cc9170612">DATA_PIN_4</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:add0d7e2b20f8ad36e9f9c14cc9170612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a71185cca1181e4e1c33ace29a0096" id="r_ac2a71185cca1181e4e1c33ace29a0096"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#ac2a71185cca1181e4e1c33ace29a0096">DATA_PIN_5</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:ac2a71185cca1181e4e1c33ace29a0096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8c805f3932b013e3a1de4f07ef490e" id="r_afa8c805f3932b013e3a1de4f07ef490e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#afa8c805f3932b013e3a1de4f07ef490e">DATA_PIN_6</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:afa8c805f3932b013e3a1de4f07ef490e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab8e0fb02c73359cf16c78f412b8ccb" id="r_a4ab8e0fb02c73359cf16c78f412b8ccb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a4ab8e0fb02c73359cf16c78f412b8ccb">DATA_PIN_7</a>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:a4ab8e0fb02c73359cf16c78f412b8ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0aeb9ad8e1eee41e8990f68b228f04" id="r_a8c0aeb9ad8e1eee41e8990f68b228f04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a8c0aeb9ad8e1eee41e8990f68b228f04">DATA_PIN_8</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a8c0aeb9ad8e1eee41e8990f68b228f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a67c7608f9e7a0fa3db35f2b7ef59f" id="r_ac9a67c7608f9e7a0fa3db35f2b7ef59f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#ac9a67c7608f9e7a0fa3db35f2b7ef59f">DATA_PIN_9</a>&#160;&#160;&#160;27</td></tr>
+<tr class="separator:ac9a67c7608f9e7a0fa3db35f2b7ef59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4aad2638a227c7671d328c7b26f1dd3" id="r_ad4aad2638a227c7671d328c7b26f1dd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#ad4aad2638a227c7671d328c7b26f1dd3">DATA_PIN_10</a>&#160;&#160;&#160;17</td></tr>
+<tr class="separator:ad4aad2638a227c7671d328c7b26f1dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198f7cd640642feaa97c3080512d9f74" id="r_a198f7cd640642feaa97c3080512d9f74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a198f7cd640642feaa97c3080512d9f74">DATA_PIN_11</a>&#160;&#160;&#160;26</td></tr>
+<tr class="separator:a198f7cd640642feaa97c3080512d9f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2d25ca572cba93a84dd154e82d3405" id="r_a7f2d25ca572cba93a84dd154e82d3405"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a7f2d25ca572cba93a84dd154e82d3405">DATA_PIN_12</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a7f2d25ca572cba93a84dd154e82d3405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22137a7ef682f95fc76332d6f9c62e01" id="r_a22137a7ef682f95fc76332d6f9c62e01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a22137a7ef682f95fc76332d6f9c62e01">DATA_PIN_13</a>&#160;&#160;&#160;25</td></tr>
+<tr class="separator:a22137a7ef682f95fc76332d6f9c62e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f21fad4bd598e496f3fb77ee5cf3bd2" id="r_a1f21fad4bd598e496f3fb77ee5cf3bd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a1f21fad4bd598e496f3fb77ee5cf3bd2">DATA_PIN_14</a>&#160;&#160;&#160;18</td></tr>
+<tr class="separator:a1f21fad4bd598e496f3fb77ee5cf3bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9c2d50634687e9c3a2c4fd4253ead8" id="r_a8d9c2d50634687e9c3a2c4fd4253ead8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a8d9c2d50634687e9c3a2c4fd4253ead8">DATA_PIN_15</a>&#160;&#160;&#160;33</td></tr>
+<tr class="separator:a8d9c2d50634687e9c3a2c4fd4253ead8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09904bcfa41c3a72e1326c278a03fb76" id="r_a09904bcfa41c3a72e1326c278a03fb76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a09904bcfa41c3a72e1326c278a03fb76">DATA_PIN_16</a>&#160;&#160;&#160;19</td></tr>
+<tr class="separator:a09904bcfa41c3a72e1326c278a03fb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef339b85b045beb615e7dbe80023b48" id="r_a3ef339b85b045beb615e7dbe80023b48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a3ef339b85b045beb615e7dbe80023b48">DATA_PIN_17</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a3ef339b85b045beb615e7dbe80023b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a31aaa52281105bbd619618aa34a8e" id="r_a28a31aaa52281105bbd619618aa34a8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a28a31aaa52281105bbd619618aa34a8e">DATA_PIN_18</a>&#160;&#160;&#160;21</td></tr>
+<tr class="separator:a28a31aaa52281105bbd619618aa34a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d888771b4057b74bd212529c6e0df05" id="r_a3d888771b4057b74bd212529c6e0df05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a3d888771b4057b74bd212529c6e0df05">DATA_PIN_19</a>&#160;&#160;&#160;22</td></tr>
+<tr class="separator:a3d888771b4057b74bd212529c6e0df05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5944df648ccb45cce09fdcaf65c60f" id="r_abc5944df648ccb45cce09fdcaf65c60f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#abc5944df648ccb45cce09fdcaf65c60f">DATA_PIN_20</a>&#160;&#160;&#160;23</td></tr>
+<tr class="separator:abc5944df648ccb45cce09fdcaf65c60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bec24d21dd3edce2ad5eb0b70da963" id="r_a44bec24d21dd3edce2ad5eb0b70da963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a44bec24d21dd3edce2ad5eb0b70da963">MAX_POWER_MA</a>&#160;&#160;&#160;57000</td></tr>
 <tr class="memdesc:a44bec24d21dd3edce2ad5eb0b70da963"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum power of one strip in milliamps for 5V power supply.  <br /></td></tr>
 <tr class="separator:a44bec24d21dd3edce2ad5eb0b70da963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a520706d56c4772d6d13acc37c9e317ba" id="r_a520706d56c4772d6d13acc37c9e317ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a520706d56c4772d6d13acc37c9e317ba">DATA_PIN_LH</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a520706d56c4772d6d13acc37c9e317ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GPIO pin used for LH light.  <br /></td></tr>
-<tr class="separator:a520706d56c4772d6d13acc37c9e317ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08dc0eda484a5d6e873986dafe0272b9" id="r_a08dc0eda484a5d6e873986dafe0272b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a08dc0eda484a5d6e873986dafe0272b9">DATA_PIN_RH</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:a08dc0eda484a5d6e873986dafe0272b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GPIO pin used for RH light.  <br /></td></tr>
-<tr class="separator:a08dc0eda484a5d6e873986dafe0272b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e67bd74eb01ef5ad0e2338ebd0e780" id="r_a49e67bd74eb01ef5ad0e2338ebd0e780"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780">whiteTemp</a> { <a class="el" href="TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780a5beac0ff19b0fb410c2f82118ccf8da1">WARM_WHITE</a> = 2700
 , <a class="el" href="TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527">NATURAL_WHITE</a> = 4000
 , <a class="el" href="TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780aeeffb1c00b2b08a0fad2e7590c13b221">COLD_WHITE</a> = 6000
@@ -170,16 +185,19 @@ Variables</h2></td></tr>
 <tr class="separator:a9183a7382aaea063089e8d90a94e9894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Switch</h2></td></tr>
-<tr class="memitem:a6eb1e390762833df0da0c722ac797b40" id="r_a6eb1e390762833df0da0c722ac797b40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a6eb1e390762833df0da0c722ac797b40">SWITCH_PIN_LH</a>&#160;&#160;&#160;4</td></tr>
-<tr class="memdesc:a6eb1e390762833df0da0c722ac797b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">LH Switch pin.  <br /></td></tr>
-<tr class="separator:a6eb1e390762833df0da0c722ac797b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeab637fefe999a912e56838aae644c6e" id="r_aeab637fefe999a912e56838aae644c6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#aeab637fefe999a912e56838aae644c6e">SWITCH_PIN_RH</a>&#160;&#160;&#160;15</td></tr>
-<tr class="memdesc:aeab637fefe999a912e56838aae644c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">RH Switch pin.  <br /></td></tr>
-<tr class="separator:aeab637fefe999a912e56838aae644c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34997cb36c902a6cf25d5363f4457488" id="r_a34997cb36c902a6cf25d5363f4457488"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a34997cb36c902a6cf25d5363f4457488">SWITCH_PIN_1</a>&#160;&#160;&#160;35</td></tr>
+<tr class="memdesc:a34997cb36c902a6cf25d5363f4457488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch pins.  <br /></td></tr>
+<tr class="separator:a34997cb36c902a6cf25d5363f4457488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a03b0b60bbcb8ed9fdc233abd45320" id="r_ab4a03b0b60bbcb8ed9fdc233abd45320"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#ab4a03b0b60bbcb8ed9fdc233abd45320">SWITCH_PIN_2</a>&#160;&#160;&#160;34</td></tr>
+<tr class="separator:ab4a03b0b60bbcb8ed9fdc233abd45320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14cf89cc4288c9289d70a9fdf51f72b" id="r_ab14cf89cc4288c9289d70a9fdf51f72b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#ab14cf89cc4288c9289d70a9fdf51f72b">SWITCH_PIN_3</a>&#160;&#160;&#160;39</td></tr>
+<tr class="separator:ab14cf89cc4288c9289d70a9fdf51f72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4209ac1def55f35d129e14f16690f1df" id="r_a4209ac1def55f35d129e14f16690f1df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a4209ac1def55f35d129e14f16690f1df">SWITCH_PIN_4</a>&#160;&#160;&#160;36</td></tr>
+<tr class="separator:a4209ac1def55f35d129e14f16690f1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f8cd8ad7987ee77f884dd9537c6ac49" id="r_a7f8cd8ad7987ee77f884dd9537c6ac49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a7f8cd8ad7987ee77f884dd9537c6ac49">LONG_PULSE</a>&#160;&#160;&#160;1000</td></tr>
 <tr class="memdesc:a7f8cd8ad7987ee77f884dd9537c6ac49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Long pulse duration in ms.  <br /></td></tr>
 <tr class="separator:a7f8cd8ad7987ee77f884dd9537c6ac49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ca00b1340bbbc999d22c6be9f3f2741" id="r_a4ca00b1340bbbc999d22c6be9f3f2741"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a4ca00b1340bbbc999d22c6be9f3f2741">switchPins</a> [] = {<a class="el" href="TeteDeLit_8h.html#a6eb1e390762833df0da0c722ac797b40">SWITCH_PIN_LH</a>, <a class="el" href="TeteDeLit_8h.html#aeab637fefe999a912e56838aae644c6e">SWITCH_PIN_RH</a>}</td></tr>
+<tr class="memitem:a4ca00b1340bbbc999d22c6be9f3f2741" id="r_a4ca00b1340bbbc999d22c6be9f3f2741"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8h.html#a4ca00b1340bbbc999d22c6be9f3f2741">switchPins</a> []</td></tr>
 <tr class="memdesc:a4ca00b1340bbbc999d22c6be9f3f2741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array with switches pins.  <br /></td></tr>
 <tr class="separator:a4ca00b1340bbbc999d22c6be9f3f2741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -190,41 +208,325 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a520706d56c4772d6d13acc37c9e317ba" name="a520706d56c4772d6d13acc37c9e317ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a520706d56c4772d6d13acc37c9e317ba">&#9670;&#160;</a></span>DATA_PIN_LH</h2>
+<a id="a42ddd6c880dee44e91785dfa53f7bf9b" name="a42ddd6c880dee44e91785dfa53f7bf9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ddd6c880dee44e91785dfa53f7bf9b">&#9670;&#160;</a></span>DATA_PIN_1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DATA_PIN_LH&#160;&#160;&#160;0</td>
+          <td class="memname">#define DATA_PIN_1&#160;&#160;&#160;15</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The GPIO pin used for LH light. </p>
-<p>DATA_PIN_LH </p>
+<p>The GPIO pin used for leds strips. </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00080">80</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00051">51</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
-<a id="a08dc0eda484a5d6e873986dafe0272b9" name="a08dc0eda484a5d6e873986dafe0272b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08dc0eda484a5d6e873986dafe0272b9">&#9670;&#160;</a></span>DATA_PIN_RH</h2>
+<a id="ad4aad2638a227c7671d328c7b26f1dd3" name="ad4aad2638a227c7671d328c7b26f1dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4aad2638a227c7671d328c7b26f1dd3">&#9670;&#160;</a></span>DATA_PIN_10</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DATA_PIN_RH&#160;&#160;&#160;2</td>
+          <td class="memname">#define DATA_PIN_10&#160;&#160;&#160;17</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The GPIO pin used for RH light. </p>
-<p>DATA_PIN_RH </p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00060">60</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00086">86</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+</div>
+</div>
+<a id="a198f7cd640642feaa97c3080512d9f74" name="a198f7cd640642feaa97c3080512d9f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198f7cd640642feaa97c3080512d9f74">&#9670;&#160;</a></span>DATA_PIN_11</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_11&#160;&#160;&#160;26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00061">61</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a7f2d25ca572cba93a84dd154e82d3405" name="a7f2d25ca572cba93a84dd154e82d3405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f2d25ca572cba93a84dd154e82d3405">&#9670;&#160;</a></span>DATA_PIN_12</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_12&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00062">62</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a22137a7ef682f95fc76332d6f9c62e01" name="a22137a7ef682f95fc76332d6f9c62e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22137a7ef682f95fc76332d6f9c62e01">&#9670;&#160;</a></span>DATA_PIN_13</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_13&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00063">63</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a1f21fad4bd598e496f3fb77ee5cf3bd2" name="a1f21fad4bd598e496f3fb77ee5cf3bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f21fad4bd598e496f3fb77ee5cf3bd2">&#9670;&#160;</a></span>DATA_PIN_14</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_14&#160;&#160;&#160;18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00064">64</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a8d9c2d50634687e9c3a2c4fd4253ead8" name="a8d9c2d50634687e9c3a2c4fd4253ead8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9c2d50634687e9c3a2c4fd4253ead8">&#9670;&#160;</a></span>DATA_PIN_15</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_15&#160;&#160;&#160;33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00065">65</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a09904bcfa41c3a72e1326c278a03fb76" name="a09904bcfa41c3a72e1326c278a03fb76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09904bcfa41c3a72e1326c278a03fb76">&#9670;&#160;</a></span>DATA_PIN_16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_16&#160;&#160;&#160;19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00066">66</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a3ef339b85b045beb615e7dbe80023b48" name="a3ef339b85b045beb615e7dbe80023b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef339b85b045beb615e7dbe80023b48">&#9670;&#160;</a></span>DATA_PIN_17</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_17&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00067">67</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a28a31aaa52281105bbd619618aa34a8e" name="a28a31aaa52281105bbd619618aa34a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a31aaa52281105bbd619618aa34a8e">&#9670;&#160;</a></span>DATA_PIN_18</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_18&#160;&#160;&#160;21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00068">68</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a3d888771b4057b74bd212529c6e0df05" name="a3d888771b4057b74bd212529c6e0df05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d888771b4057b74bd212529c6e0df05">&#9670;&#160;</a></span>DATA_PIN_19</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_19&#160;&#160;&#160;22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00069">69</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a403fd820fbe0c26e193fea531aacdc8f" name="a403fd820fbe0c26e193fea531aacdc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403fd820fbe0c26e193fea531aacdc8f">&#9670;&#160;</a></span>DATA_PIN_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_2&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00052">52</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="abc5944df648ccb45cce09fdcaf65c60f" name="abc5944df648ccb45cce09fdcaf65c60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5944df648ccb45cce09fdcaf65c60f">&#9670;&#160;</a></span>DATA_PIN_20</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_20&#160;&#160;&#160;23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00070">70</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a5e7e4bc0d828afee54feb9cbe20a208b" name="a5e7e4bc0d828afee54feb9cbe20a208b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7e4bc0d828afee54feb9cbe20a208b">&#9670;&#160;</a></span>DATA_PIN_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_3&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00053">53</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="add0d7e2b20f8ad36e9f9c14cc9170612" name="add0d7e2b20f8ad36e9f9c14cc9170612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0d7e2b20f8ad36e9f9c14cc9170612">&#9670;&#160;</a></span>DATA_PIN_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_4&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00054">54</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="ac2a71185cca1181e4e1c33ace29a0096" name="ac2a71185cca1181e4e1c33ace29a0096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a71185cca1181e4e1c33ace29a0096">&#9670;&#160;</a></span>DATA_PIN_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_5&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00055">55</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="afa8c805f3932b013e3a1de4f07ef490e" name="afa8c805f3932b013e3a1de4f07ef490e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8c805f3932b013e3a1de4f07ef490e">&#9670;&#160;</a></span>DATA_PIN_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_6&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00056">56</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a4ab8e0fb02c73359cf16c78f412b8ccb" name="a4ab8e0fb02c73359cf16c78f412b8ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab8e0fb02c73359cf16c78f412b8ccb">&#9670;&#160;</a></span>DATA_PIN_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_7&#160;&#160;&#160;14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00057">57</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="a8c0aeb9ad8e1eee41e8990f68b228f04" name="a8c0aeb9ad8e1eee41e8990f68b228f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0aeb9ad8e1eee41e8990f68b228f04">&#9670;&#160;</a></span>DATA_PIN_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_8&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00058">58</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+
+</div>
+</div>
+<a id="ac9a67c7608f9e7a0fa3db35f2b7ef59f" name="ac9a67c7608f9e7a0fa3db35f2b7ef59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a67c7608f9e7a0fa3db35f2b7ef59f">&#9670;&#160;</a></span>DATA_PIN_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_PIN_9&#160;&#160;&#160;27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00059">59</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
@@ -243,7 +545,7 @@ Variables</h2></td></tr>
 <p>Maximum light brighness. </p>
 <p>LIGHT_BRIGTHNESS </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00035">35</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00030">30</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +564,7 @@ Variables</h2></td></tr>
 <p>The number of light states. </p>
 <p>LIGHT_STATE_COUNT </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00029">29</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00024">24</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
@@ -279,9 +581,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Long pulse duration in ms. </p>
-<p>LONG_PULSE </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00131">131</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00120">120</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +593,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_POWER_MA&#160;&#160;&#160;800</td>
+          <td class="memname">#define MAX_POWER_MA&#160;&#160;&#160;57000</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -300,112 +601,77 @@ Variables</h2></td></tr>
 <p>The maximum power of one strip in milliamps for 5V power supply. </p>
 <p>MAX_POWER_MA </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00074">74</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00076">76</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
-<a id="a4c4ae9a4146ce8d6a5debc90300d9abd" name="a4c4ae9a4146ce8d6a5debc90300d9abd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c4ae9a4146ce8d6a5debc90300d9abd">&#9670;&#160;</a></span>NUM_LEDS</h2>
+<a id="a34997cb36c902a6cf25d5363f4457488" name="a34997cb36c902a6cf25d5363f4457488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34997cb36c902a6cf25d5363f4457488">&#9670;&#160;</a></span>SWITCH_PIN_1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NUM_LEDS&#160;&#160;&#160;120</td>
+          <td class="memname">#define SWITCH_PIN_1&#160;&#160;&#160;35</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of led on a strip (a side of the bed have one strip). </p>
-<p>NUM_LEDS </p>
+<p>Switch pins. </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00068">68</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00106">106</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
-<a id="a59ce09f1ecc86341f668475f4aaeffca" name="a59ce09f1ecc86341f668475f4aaeffca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59ce09f1ecc86341f668475f4aaeffca">&#9670;&#160;</a></span>NUM_LIGHTS</h2>
+<a id="ab4a03b0b60bbcb8ed9fdc233abd45320" name="ab4a03b0b60bbcb8ed9fdc233abd45320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a03b0b60bbcb8ed9fdc233abd45320">&#9670;&#160;</a></span>SWITCH_PIN_2</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NUM_LIGHTS&#160;&#160;&#160;2</td>
+          <td class="memname">#define SWITCH_PIN_2&#160;&#160;&#160;34</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of lights. One on each side of the bed. </p>
-<p>NUM_LIGHTS </p>
-
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00023">23</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00107">107</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
-<a id="a6eb1e390762833df0da0c722ac797b40" name="a6eb1e390762833df0da0c722ac797b40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eb1e390762833df0da0c722ac797b40">&#9670;&#160;</a></span>SWITCH_PIN_LH</h2>
+<a id="ab14cf89cc4288c9289d70a9fdf51f72b" name="ab14cf89cc4288c9289d70a9fdf51f72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14cf89cc4288c9289d70a9fdf51f72b">&#9670;&#160;</a></span>SWITCH_PIN_3</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SWITCH_PIN_LH&#160;&#160;&#160;4</td>
+          <td class="memname">#define SWITCH_PIN_3&#160;&#160;&#160;39</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>LH Switch pin. </p>
-<p>SWITCH_PIN_LH </p>
-
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00119">119</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00108">108</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
-<a id="aeab637fefe999a912e56838aae644c6e" name="aeab637fefe999a912e56838aae644c6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeab637fefe999a912e56838aae644c6e">&#9670;&#160;</a></span>SWITCH_PIN_RH</h2>
+<a id="a4209ac1def55f35d129e14f16690f1df" name="a4209ac1def55f35d129e14f16690f1df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4209ac1def55f35d129e14f16690f1df">&#9670;&#160;</a></span>SWITCH_PIN_4</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SWITCH_PIN_RH&#160;&#160;&#160;15</td>
+          <td class="memname">#define SWITCH_PIN_4&#160;&#160;&#160;36</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>RH Switch pin. </p>
-<p>SWITCH_PIN_RH </p>
-
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00125">125</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00109">109</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a94c7262ada4c6d082613b2211976a0c8" name="a94c7262ada4c6d082613b2211976a0c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94c7262ada4c6d082613b2211976a0c8">&#9670;&#160;</a></span>lightSide</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="TeteDeLit_8h.html#a94c7262ada4c6d082613b2211976a0c8">lightSide</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enumerator for light side. </p>
-<p>lightSide </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a94c7262ada4c6d082613b2211976a0c8aadab8e0111f669b137544a4ecce92997" name="a94c7262ada4c6d082613b2211976a0c8aadab8e0111f669b137544a4ecce92997"></a>LH&#160;</td><td class="fielddoc"><p>Light on left hand from the front of the bed,. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a94c7262ada4c6d082613b2211976a0c8a9e2b6a13474c92e190410985531c8a1d" name="a94c7262ada4c6d082613b2211976a0c8a9e2b6a13474c92e190410985531c8a1d"></a>RH&#160;</td><td class="fielddoc"><p>Light on right hand from the front of the beb. </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00041">41</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
-
-</div>
-</div>
 <a id="a0453581774a68c9d0766fc8ab7a2524d" name="a0453581774a68c9d0766fc8ab7a2524d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0453581774a68c9d0766fc8ab7a2524d">&#9670;&#160;</a></span>lightState</h2>
 
@@ -429,7 +695,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00050">50</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00036">36</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
@@ -456,13 +722,13 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00092">92</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00082">82</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3719ab88c122de7300027e22824c4343" name="a3719ab88c122de7300027e22824c4343"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3719ab88c122de7300027e22824c4343">&#9670;&#160;</a></span>setLightNight()</h2>
+<a id="ac04f7fef089db3881b36de38bd9d8be4" name="ac04f7fef089db3881b36de38bd9d8be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac04f7fef089db3881b36de38bd9d8be4">&#9670;&#160;</a></span>setLightNight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,24 +736,45 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void setLightNight </td>
           <td>(</td>
-          <td class="paramtype">struct CRGB *&#160;</td>
-          <td class="paramname"><em>ledArray</em></td><td>)</td>
+          <td class="paramtype">CRGB *&#160;</td>
+          <td class="paramname"><em>pleds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>numLeds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numStrips</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Turn on the light in night mode. </p>
-<p>void setLightNight(truct CRGB * ledArray) </p>
 <p>Fil the leds array with red.</p>
 <p>Apply the night pattern to the leds array.</p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00022">22</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00019">19</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a921912d004351f7c3c7354b00b5721ef" name="a921912d004351f7c3c7354b00b5721ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a921912d004351f7c3c7354b00b5721ef">&#9670;&#160;</a></span>setLightOff()</h2>
+<a id="a71ed150b2e85cdecff7cd67f05ddd25e" name="a71ed150b2e85cdecff7cd67f05ddd25e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ed150b2e85cdecff7cd67f05ddd25e">&#9670;&#160;</a></span>setLightOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -495,24 +782,39 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void setLightOff </td>
           <td>(</td>
-          <td class="paramtype">struct CRGB *&#160;</td>
-          <td class="paramname"><em>ledArray</em></td><td>)</td>
+          <td class="paramtype">CRGB *&#160;</td>
+          <td class="paramname"><em>pleds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>numLeds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numStrips</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Turn off the light. </p>
-<p>void setLightOff(truct CRGB * ledArray) </p>
+<p>! Turn off the light </p>
 <p>Fil the leds array with black. <br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00013">13</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00010">10</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aba3c57a8ec54f779bff21e1d577e92a0" name="aba3c57a8ec54f779bff21e1d577e92a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba3c57a8ec54f779bff21e1d577e92a0">&#9670;&#160;</a></span>setLightOn()</h2>
+<a id="ad06d5b267a12bd90de8968489af121ca" name="ad06d5b267a12bd90de8968489af121ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad06d5b267a12bd90de8968489af121ca">&#9670;&#160;</a></span>setLightOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,49 +822,37 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void setLightOn </td>
           <td>(</td>
-          <td class="paramtype">struct CRGB *&#160;</td>
-          <td class="paramname"><em>ledArray</em></td><td>)</td>
+          <td class="paramtype">CRGB *&#160;</td>
+          <td class="paramname"><em>pleds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>numLeds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numStrips</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Turn on the light. </p>
-<p>void setLightOn(truct CRGB * ledArray) </p>
 <p>Fil the leds array with white.</p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00036">36</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00034">34</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="add38ad447353499d70b6eeffbc18a22e" name="add38ad447353499d70b6eeffbc18a22e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add38ad447353499d70b6eeffbc18a22e">&#9670;&#160;</a></span>nightPattern</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int nightPattern[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= { </div>
-<div class="line">  0, 9, 17, 26, 34, 43, 51, 60, 68, 77, 85, 94, 102, 111, 119, 128, 136, 145, 153, 162, 170, 179, 187, 196, 204, 213, 221, 230, 238, 247, </div>
-<div class="line">  0, 0, 0, 9, 17, 26, 34, 43, 51, 60, 68, 77, 85, 94, 102, 111, 119, 128, 136, 145, 153, 162, 170, 179, 187, 196, 204, 213, 221, 230, </div>
-<div class="line">  0, 0, 0, 0, 0, 0, 9, 17, 26, 34, 43, 51, 60, 68, 77, 85, 94, 102, 111, 119, 128, 136, 145, 153, 162, 170, 179, 187, 196, 204, </div>
-<div class="line">  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, </div>
-<div class="line">  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, </div>
-<div class="line">  0, 0, 0, 0, 0, 0, 0, 0, 0, 0 </div>
-<div class="line">}</div>
-</div><!-- fragment -->
-<p>Night led pattern. </p>
-<p>nightPattern[] </p>
-
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00151">151</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
-
-</div>
-</div>
 <a id="a9183a7382aaea063089e8d90a94e9894" name="a9183a7382aaea063089e8d90a94e9894"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9183a7382aaea063089e8d90a94e9894">&#9670;&#160;</a></span>rgbw</h2>
 
@@ -575,16 +865,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= Rgbw(</div>
-<div class="line">  <a class="code hl_enumvalue" href="TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527">NATURAL_WHITE</a>,                      </div>
-<div class="line">  kRGBWBoostedWhite,                  </div>
-<div class="line">  W3                                  </div>
+<div class="line">    <a class="code hl_enumvalue" href="TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527">NATURAL_WHITE</a>,                      </div>
+<div class="line">    kRGBWBoostedWhite,                  </div>
+<div class="line">    W3                                  </div>
 <div class="line">)</div>
-<div class="ttc" id="aTeteDeLit_8h_html_a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527"><div class="ttname"><a href="TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527">NATURAL_WHITE</a></div><div class="ttdeci">@ NATURAL_WHITE</div><div class="ttdoc">Natural white.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8h_source.html#l00094">TeteDeLit.h:94</a></div></div>
+<div class="ttc" id="aTeteDeLit_8h_html_a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527"><div class="ttname"><a href="TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527">NATURAL_WHITE</a></div><div class="ttdeci">@ NATURAL_WHITE</div><div class="ttdoc">Natural white.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8h_source.html#l00084">TeteDeLit.h:84</a></div></div>
 </div><!-- fragment -->
 <p>The custom rgbw strcuture. </p>
 <p>rgbw </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00102">102</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00092">92</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>
@@ -595,15 +885,24 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int switchPins[] = {<a class="el" href="TeteDeLit_8h.html#a6eb1e390762833df0da0c722ac797b40">SWITCH_PIN_LH</a>, <a class="el" href="TeteDeLit_8h.html#aeab637fefe999a912e56838aae644c6e">SWITCH_PIN_RH</a>}</td>
+          <td class="memname">const int switchPins[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_define" href="TeteDeLit_8h.html#a34997cb36c902a6cf25d5363f4457488">SWITCH_PIN_1</a>,</div>
+<div class="line">    <a class="code hl_define" href="TeteDeLit_8h.html#ab4a03b0b60bbcb8ed9fdc233abd45320">SWITCH_PIN_2</a>,</div>
+<div class="line">    <a class="code hl_define" href="TeteDeLit_8h.html#ab14cf89cc4288c9289d70a9fdf51f72b">SWITCH_PIN_3</a>,</div>
+<div class="line">    <a class="code hl_define" href="TeteDeLit_8h.html#a4209ac1def55f35d129e14f16690f1df">SWITCH_PIN_4</a></div>
+<div class="line">}</div>
+<div class="ttc" id="aTeteDeLit_8h_html_a34997cb36c902a6cf25d5363f4457488"><div class="ttname"><a href="TeteDeLit_8h.html#a34997cb36c902a6cf25d5363f4457488">SWITCH_PIN_1</a></div><div class="ttdeci">#define SWITCH_PIN_1</div><div class="ttdoc">Switch pins.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8h_source.html#l00106">TeteDeLit.h:106</a></div></div>
+<div class="ttc" id="aTeteDeLit_8h_html_a4209ac1def55f35d129e14f16690f1df"><div class="ttname"><a href="TeteDeLit_8h.html#a4209ac1def55f35d129e14f16690f1df">SWITCH_PIN_4</a></div><div class="ttdeci">#define SWITCH_PIN_4</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8h_source.html#l00109">TeteDeLit.h:109</a></div></div>
+<div class="ttc" id="aTeteDeLit_8h_html_ab14cf89cc4288c9289d70a9fdf51f72b"><div class="ttname"><a href="TeteDeLit_8h.html#ab14cf89cc4288c9289d70a9fdf51f72b">SWITCH_PIN_3</a></div><div class="ttdeci">#define SWITCH_PIN_3</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8h_source.html#l00108">TeteDeLit.h:108</a></div></div>
+<div class="ttc" id="aTeteDeLit_8h_html_ab4a03b0b60bbcb8ed9fdc233abd45320"><div class="ttname"><a href="TeteDeLit_8h.html#ab4a03b0b60bbcb8ed9fdc233abd45320">SWITCH_PIN_2</a></div><div class="ttdeci">#define SWITCH_PIN_2</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8h_source.html#l00107">TeteDeLit.h:107</a></div></div>
+</div><!-- fragment -->
 <p>Array with switches pins. </p>
-<p>switchPins </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00137">137</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8h_source.html#l00112">112</a> of file <a class="el" href="TeteDeLit_8h_source.html">TeteDeLit.h</a>.</p>
 
 </div>
 </div>

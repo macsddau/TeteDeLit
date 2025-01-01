@@ -100,15 +100,15 @@ $(document).ready(function(){initNavTree('TeteDeLit_8cpp.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a921912d004351f7c3c7354b00b5721ef" id="r_a921912d004351f7c3c7354b00b5721ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8cpp.html#a921912d004351f7c3c7354b00b5721ef">setLightOff</a> (struct CRGB *ledArray)</td></tr>
-<tr class="memdesc:a921912d004351f7c3c7354b00b5721ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off the light.  <br /></td></tr>
-<tr class="separator:a921912d004351f7c3c7354b00b5721ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3719ab88c122de7300027e22824c4343" id="r_a3719ab88c122de7300027e22824c4343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8cpp.html#a3719ab88c122de7300027e22824c4343">setLightNight</a> (struct CRGB *ledArray)</td></tr>
-<tr class="memdesc:a3719ab88c122de7300027e22824c4343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the light in night mode.  <br /></td></tr>
-<tr class="separator:a3719ab88c122de7300027e22824c4343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba3c57a8ec54f779bff21e1d577e92a0" id="r_aba3c57a8ec54f779bff21e1d577e92a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8cpp.html#aba3c57a8ec54f779bff21e1d577e92a0">setLightOn</a> (struct CRGB *ledArray)</td></tr>
-<tr class="memdesc:aba3c57a8ec54f779bff21e1d577e92a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the light.  <br /></td></tr>
-<tr class="separator:aba3c57a8ec54f779bff21e1d577e92a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ed150b2e85cdecff7cd67f05ddd25e" id="r_a71ed150b2e85cdecff7cd67f05ddd25e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8cpp.html#a71ed150b2e85cdecff7cd67f05ddd25e">setLightOff</a> (CRGB *pleds, const int *<a class="el" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>, uint8_t numStrips)</td></tr>
+<tr class="memdesc:a71ed150b2e85cdecff7cd67f05ddd25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">! Turn off the light  <br /></td></tr>
+<tr class="separator:a71ed150b2e85cdecff7cd67f05ddd25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04f7fef089db3881b36de38bd9d8be4" id="r_ac04f7fef089db3881b36de38bd9d8be4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8cpp.html#ac04f7fef089db3881b36de38bd9d8be4">setLightNight</a> (CRGB *pleds, const int *<a class="el" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>, uint8_t numStrips, const uint8_t *pattern)</td></tr>
+<tr class="memdesc:ac04f7fef089db3881b36de38bd9d8be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the light in night mode.  <br /></td></tr>
+<tr class="separator:ac04f7fef089db3881b36de38bd9d8be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06d5b267a12bd90de8968489af121ca" id="r_ad06d5b267a12bd90de8968489af121ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TeteDeLit_8cpp.html#ad06d5b267a12bd90de8968489af121ca">setLightOn</a> (CRGB *pleds, const int *<a class="el" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>, uint8_t numStrips)</td></tr>
+<tr class="memdesc:ad06d5b267a12bd90de8968489af121ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the light.  <br /></td></tr>
+<tr class="separator:ad06d5b267a12bd90de8968489af121ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>d.macsddau </dd></dl>
@@ -117,8 +117,8 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a3719ab88c122de7300027e22824c4343" name="a3719ab88c122de7300027e22824c4343"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3719ab88c122de7300027e22824c4343">&#9670;&#160;</a></span>setLightNight()</h2>
+<a id="ac04f7fef089db3881b36de38bd9d8be4" name="ac04f7fef089db3881b36de38bd9d8be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac04f7fef089db3881b36de38bd9d8be4">&#9670;&#160;</a></span>setLightNight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,24 +126,45 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void setLightNight </td>
           <td>(</td>
-          <td class="paramtype">struct CRGB *&#160;</td>
-          <td class="paramname"><em>ledArray</em></td><td>)</td>
+          <td class="paramtype">CRGB *&#160;</td>
+          <td class="paramname"><em>pleds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>numLeds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numStrips</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pattern</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Turn on the light in night mode. </p>
-<p>void setLightNight(truct CRGB * ledArray) </p>
 <p>Fil the leds array with red.</p>
 <p>Apply the night pattern to the leds array.</p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00022">22</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00019">19</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a921912d004351f7c3c7354b00b5721ef" name="a921912d004351f7c3c7354b00b5721ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a921912d004351f7c3c7354b00b5721ef">&#9670;&#160;</a></span>setLightOff()</h2>
+<a id="a71ed150b2e85cdecff7cd67f05ddd25e" name="a71ed150b2e85cdecff7cd67f05ddd25e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ed150b2e85cdecff7cd67f05ddd25e">&#9670;&#160;</a></span>setLightOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,24 +172,39 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void setLightOff </td>
           <td>(</td>
-          <td class="paramtype">struct CRGB *&#160;</td>
-          <td class="paramname"><em>ledArray</em></td><td>)</td>
+          <td class="paramtype">CRGB *&#160;</td>
+          <td class="paramname"><em>pleds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>numLeds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numStrips</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Turn off the light. </p>
-<p>void setLightOff(truct CRGB * ledArray) </p>
+<p>! Turn off the light </p>
 <p>Fil the leds array with black. <br  />
 </p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00013">13</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00010">10</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aba3c57a8ec54f779bff21e1d577e92a0" name="aba3c57a8ec54f779bff21e1d577e92a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba3c57a8ec54f779bff21e1d577e92a0">&#9670;&#160;</a></span>setLightOn()</h2>
+<a id="ad06d5b267a12bd90de8968489af121ca" name="ad06d5b267a12bd90de8968489af121ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad06d5b267a12bd90de8968489af121ca">&#9670;&#160;</a></span>setLightOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,18 +212,33 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void setLightOn </td>
           <td>(</td>
-          <td class="paramtype">struct CRGB *&#160;</td>
-          <td class="paramname"><em>ledArray</em></td><td>)</td>
+          <td class="paramtype">CRGB *&#160;</td>
+          <td class="paramname"><em>pleds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>numLeds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numStrips</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Turn on the light. </p>
-<p>void setLightOn(truct CRGB * ledArray) </p>
 <p>Fil the leds array with white.</p>
 
-<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00036">36</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TeteDeLit_8cpp_source.html#l00034">34</a> of file <a class="el" href="TeteDeLit_8cpp_source.html">TeteDeLit.cpp</a>.</p>
 
 </div>
 </div>

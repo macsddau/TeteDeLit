@@ -100,33 +100,42 @@ $(document).ready(function(){initNavTree('TeteDeLit_8cpp_source.html',''); initR
 <a href="TeteDeLit_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="TeteDeLit_8h.html">TeteDeLit.h</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="TeteDeLit_8h.html#a921912d004351f7c3c7354b00b5721ef">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="TeteDeLit_8cpp.html#a921912d004351f7c3c7354b00b5721ef">setLightOff</a>(<span class="keyword">struct</span> CRGB * ledArray) {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    fill_solid(ledArray, <a class="code hl_define" href="TeteDeLit_8h.html#a4c4ae9a4146ce8d6a5debc90300d9abd">NUM_LEDS</a>, CRGB::Black);</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="TeteDeLit_8h.html#a71ed150b2e85cdecff7cd67f05ddd25e">   10</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="TeteDeLit_8cpp.html#a71ed150b2e85cdecff7cd67f05ddd25e">setLightOff</a>(   CRGB * pleds,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                    <span class="keyword">const</span> <span class="keywordtype">int</span> * <a class="code hl_variable" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>,</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                    uint8_t numStrips) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">for</span> (uint8_t strip = 0; strip &lt; numStrips; strip++)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        fill_solid(&amp;pleds[strip], <a class="code hl_variable" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>[strip], CRGB::Black);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
 </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="TeteDeLit_8h.html#a3719ab88c122de7300027e22824c4343">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="TeteDeLit_8cpp.html#a3719ab88c122de7300027e22824c4343">setLightNight</a>(<span class="keyword">struct</span> CRGB * ledArray) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    fill_solid(ledArray, <a class="code hl_define" href="TeteDeLit_8h.html#a4c4ae9a4146ce8d6a5debc90300d9abd">NUM_LEDS</a>, CRGB::Red);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 0; l &lt; <a class="code hl_define" href="TeteDeLit_8h.html#a4c4ae9a4146ce8d6a5debc90300d9abd">NUM_LEDS</a>; l++) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        ledArray[l].nscale8(<a class="code hl_variable" href="TeteDeLit_8h.html#add38ad447353499d70b6eeffbc18a22e">nightPattern</a>[l]);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="TeteDeLit_8h.html#ac04f7fef089db3881b36de38bd9d8be4">   19</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="TeteDeLit_8cpp.html#ac04f7fef089db3881b36de38bd9d8be4">setLightNight</a>( CRGB * pleds,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                    <span class="keyword">const</span> <span class="keywordtype">int</span> * <a class="code hl_variable" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                    uint8_t numStrips,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    <span class="keyword">const</span> uint8_t * pattern) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">for</span> (uint8_t strip = 0; strip &lt; numStrips; strip++)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        fill_solid(&amp;pleds[strip], <a class="code hl_variable" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>[strip], CRGB::Red);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">for</span> (uint8_t strip = 0; strip &lt; numStrips; strip++)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> led = 0; led &lt; <a class="code hl_variable" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>[strip]; led++)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            (&amp;pleds[strip])[led].nscale8((&amp;pattern[strip])[led]);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="TeteDeLit_8h.html#aba3c57a8ec54f779bff21e1d577e92a0">   36</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="TeteDeLit_8cpp.html#aba3c57a8ec54f779bff21e1d577e92a0">setLightOn</a>(<span class="keyword">struct</span> CRGB * ledArray) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    fill_solid(ledArray, <a class="code hl_define" href="TeteDeLit_8h.html#a4c4ae9a4146ce8d6a5debc90300d9abd">NUM_LEDS</a>, CRGB::White);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="TeteDeLit_8h.html#ad06d5b267a12bd90de8968489af121ca">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="TeteDeLit_8cpp.html#ad06d5b267a12bd90de8968489af121ca">setLightOn</a>(    CRGB * pleds,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    <span class="keyword">const</span> <span class="keywordtype">int</span> * <a class="code hl_variable" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    uint8_t numStrips) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">for</span> (uint8_t strip = 0; strip &lt; numStrips; strip++)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        fill_solid(&amp;pleds[strip], <a class="code hl_variable" href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a>[strip], CRGB::White);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 </div>
-<div class="ttc" id="aTeteDeLit_8cpp_html_a3719ab88c122de7300027e22824c4343"><div class="ttname"><a href="TeteDeLit_8cpp.html#a3719ab88c122de7300027e22824c4343">setLightNight</a></div><div class="ttdeci">void setLightNight(struct CRGB *ledArray)</div><div class="ttdoc">Turn on the light in night mode.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8cpp_source.html#l00022">TeteDeLit.cpp:22</a></div></div>
-<div class="ttc" id="aTeteDeLit_8cpp_html_a921912d004351f7c3c7354b00b5721ef"><div class="ttname"><a href="TeteDeLit_8cpp.html#a921912d004351f7c3c7354b00b5721ef">setLightOff</a></div><div class="ttdeci">void setLightOff(struct CRGB *ledArray)</div><div class="ttdoc">Turn off the light.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8cpp_source.html#l00013">TeteDeLit.cpp:13</a></div></div>
-<div class="ttc" id="aTeteDeLit_8cpp_html_aba3c57a8ec54f779bff21e1d577e92a0"><div class="ttname"><a href="TeteDeLit_8cpp.html#aba3c57a8ec54f779bff21e1d577e92a0">setLightOn</a></div><div class="ttdeci">void setLightOn(struct CRGB *ledArray)</div><div class="ttdoc">Turn on the light.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8cpp_source.html#l00036">TeteDeLit.cpp:36</a></div></div>
+<div class="ttc" id="aTeteDeLit_8cpp_html_a71ed150b2e85cdecff7cd67f05ddd25e"><div class="ttname"><a href="TeteDeLit_8cpp.html#a71ed150b2e85cdecff7cd67f05ddd25e">setLightOff</a></div><div class="ttdeci">void setLightOff(CRGB *pleds, const int *numLeds, uint8_t numStrips)</div><div class="ttdoc">! Turn off the light</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8cpp_source.html#l00010">TeteDeLit.cpp:10</a></div></div>
+<div class="ttc" id="aTeteDeLit_8cpp_html_ac04f7fef089db3881b36de38bd9d8be4"><div class="ttname"><a href="TeteDeLit_8cpp.html#ac04f7fef089db3881b36de38bd9d8be4">setLightNight</a></div><div class="ttdeci">void setLightNight(CRGB *pleds, const int *numLeds, uint8_t numStrips, const uint8_t *pattern)</div><div class="ttdoc">Turn on the light in night mode.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8cpp_source.html#l00019">TeteDeLit.cpp:19</a></div></div>
+<div class="ttc" id="aTeteDeLit_8cpp_html_ad06d5b267a12bd90de8968489af121ca"><div class="ttname"><a href="TeteDeLit_8cpp.html#ad06d5b267a12bd90de8968489af121ca">setLightOn</a></div><div class="ttdeci">void setLightOn(CRGB *pleds, const int *numLeds, uint8_t numStrips)</div><div class="ttdoc">Turn on the light.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8cpp_source.html#l00034">TeteDeLit.cpp:34</a></div></div>
 <div class="ttc" id="aTeteDeLit_8h_html"><div class="ttname"><a href="TeteDeLit_8h.html">TeteDeLit.h</a></div></div>
-<div class="ttc" id="aTeteDeLit_8h_html_a4c4ae9a4146ce8d6a5debc90300d9abd"><div class="ttname"><a href="TeteDeLit_8h.html#a4c4ae9a4146ce8d6a5debc90300d9abd">NUM_LEDS</a></div><div class="ttdeci">#define NUM_LEDS</div><div class="ttdoc">The number of led on a strip (a side of the bed have one strip).</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8h_source.html#l00068">TeteDeLit.h:68</a></div></div>
-<div class="ttc" id="aTeteDeLit_8h_html_add38ad447353499d70b6eeffbc18a22e"><div class="ttname"><a href="TeteDeLit_8h.html#add38ad447353499d70b6eeffbc18a22e">nightPattern</a></div><div class="ttdeci">const int nightPattern[]</div><div class="ttdoc">Night led pattern.</div><div class="ttdef"><b>Definition</b> <a href="TeteDeLit_8h_source.html#l00151">TeteDeLit.h:151</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a4234675a334eb7d53de8b189403870bd"><div class="ttname"><a href="main_8cpp.html#a4234675a334eb7d53de8b189403870bd">numLeds</a></div><div class="ttdeci">const int numLeds[]</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00072">main.cpp:72</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
