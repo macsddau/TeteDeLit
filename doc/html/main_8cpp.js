@@ -1,5 +1,9 @@
 var main_8cpp =
 [
+    [ "LIGHT_BRIGTHNESS", "main_8cpp.html#a97425bb4347fd7753f34a07c8e98015a", null ],
+    [ "LIGHT_STATE_COUNT", "main_8cpp.html#afdc30bf8b0b44596c72c94d191d48353", null ],
+    [ "LONG_PULSE", "main_8cpp.html#a7f8cd8ad7987ee77f884dd9537c6ac49", null ],
+    [ "MAX_POWER_MA", "main_8cpp.html#a44bec24d21dd3edce2ad5eb0b70da963", null ],
     [ "NUM_LEDS_1", "main_8cpp.html#a9a2f8d18cd842e49b1152a3358321761", null ],
     [ "NUM_LEDS_10", "main_8cpp.html#a2128a9a4ba8262dcbebde3d6587c1945", null ],
     [ "NUM_LEDS_11", "main_8cpp.html#a1ef67281e32cfb25a8b42afd76d416fd", null ],
@@ -22,6 +26,16 @@ var main_8cpp =
     [ "NUM_LEDS_9", "main_8cpp.html#a3b9698cd4113ef7179a1b32bed265094", null ],
     [ "NUM_STRIPS", "main_8cpp.html#a1776c182b11b46e2019040f717912db1", null ],
     [ "NUM_SWITCHES", "main_8cpp.html#a392ca979b9f2a83a1623651c1f064a90", null ],
+    [ "lightState", "main_8cpp.html#a0453581774a68c9d0766fc8ab7a2524d", [
+      [ "LIGHT_OFF", "main_8cpp.html#a0453581774a68c9d0766fc8ab7a2524dafe86dd14e81e1c145562ecf1daf98b30", null ],
+      [ "LIGHT_NIGHT", "main_8cpp.html#a0453581774a68c9d0766fc8ab7a2524da00aeb2fb0eca73bc930e6c979933b258", null ],
+      [ "LIGHT_ON", "main_8cpp.html#a0453581774a68c9d0766fc8ab7a2524dab51f396c46963682ee6170db4991f4e8", null ]
+    ] ],
+    [ "whiteTemp", "main_8cpp.html#a49e67bd74eb01ef5ad0e2338ebd0e780", [
+      [ "WARM_WHITE", "main_8cpp.html#a49e67bd74eb01ef5ad0e2338ebd0e780a5beac0ff19b0fb410c2f82118ccf8da1", null ],
+      [ "NATURAL_WHITE", "main_8cpp.html#a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527", null ],
+      [ "COLD_WHITE", "main_8cpp.html#a49e67bd74eb01ef5ad0e2338ebd0e780aeeffb1c00b2b08a0fad2e7590c13b221", null ]
+    ] ],
     [ "loop", "main_8cpp.html#afe461d27b9c48d5921c00d521181f12f", null ],
     [ "setup", "main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d", null ],
     [ "leds", "main_8cpp.html#a3a84e61c68fac8e0d0322baca8dd7890", null ],
@@ -68,6 +82,7 @@ var main_8cpp =
     [ "nightPattern_9", "main_8cpp.html#a2186bba9e4b573d3a3fc3f8dab223841", null ],
     [ "nightPatterns", "main_8cpp.html#aa17e0a15b997fb6defce64db8b1bf334", null ],
     [ "numLeds", "main_8cpp.html#a4234675a334eb7d53de8b189403870bd", null ],
+    [ "rgbw", "main_8cpp.html#a9183a7382aaea063089e8d90a94e9894", null ],
     [ "switchStates", "main_8cpp.html#a4e31fd12e6b75afc52f7e969cb57d547", null ],
     [ "switchTimes", "main_8cpp.html#ab3844017d914bb73d8aad261aaa694c2", null ]
 ];

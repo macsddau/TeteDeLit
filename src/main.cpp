@@ -7,16 +7,23 @@
 #include <TeteDeLit.h>
 #include <Arduino.h>
 
-#define NUM_SWITCHES 1
-
-#define NUM_STRIPS 7
-
 /**
- * lightStates
- * @brief Array to store current lights states.
- *
- * Initilal state with lights off.
+ * @name Lights
+ * @brief Definition for lights.
+ * @{
 */
+
+//! The number of light states.
+#define LIGHT_STATE_COUNT		3
+
+//! Enumerator for light states.
+enum lightState {
+	LIGHT_OFF,                          //!<The light is off.
+	LIGHT_NIGHT,                        //!<A side off the bed is lighted is on in cool red using pattern for not disturbing bed neighbor.
+	LIGHT_ON                            //!<The light in on. all the bed head side is lighted in white.
+};
+
+//! Initilal state with lights off.
 lightState lightStates[] = {
 	LIGHT_OFF,
 	LIGHT_OFF,
@@ -24,30 +31,20 @@ lightState lightStates[] = {
 	LIGHT_OFF
 };
 
-/**
- * switchStates
- * @brief Array with swiches states.
-*/
-int switchStates[] = {
-	HIGH,
-	HIGH,
-	HIGH,
-	HIGH
-};
+//! Maximum light brighness.
+#define LIGHT_BRIGTHNESS		128
+
+/** @} Lights */
 
 /**
- * switchTimes
- * @brief Array with switches times.
-*/
-unsigned long switchTimes[]   = {
-	0,
-	0,
-	0,
-	0
-};
+ * @name Leds strips
+ * @{
+ */
 
+//! Number of leds strips (max 20)
+#define NUM_STRIPS 7
 
-//! The number of led on a strip.
+//! Number of led on a strip.
 #define NUM_LEDS_1              30
 #define NUM_LEDS_2				30
 #define NUM_LEDS_3				30
@@ -69,6 +66,7 @@ unsigned long switchTimes[]   = {
 #define NUM_LEDS_19				0
 #define NUM_LEDS_20				0
 
+//! array of number of leds.
 const int numLeds[] = {
 	NUM_LEDS_1,
 	NUM_LEDS_2,
@@ -92,6 +90,7 @@ const int numLeds[] = {
 	NUM_LEDS_20,
 };
 
+//! Leds strips.
 CRGB leds_1[NUM_LEDS_1];
 CRGB leds_2[NUM_LEDS_2];
 CRGB leds_3[NUM_LEDS_3];
@@ -113,7 +112,7 @@ CRGB leds_18[NUM_LEDS_18];
 CRGB leds_19[NUM_LEDS_19];
 CRGB leds_20[NUM_LEDS_20];
 
-//! The array where is store the LEDs
+//! Array of leds strips.
 CRGB * leds[] = {
 	leds_1,
 	leds_2,
@@ -137,16 +136,31 @@ CRGB * leds[] = {
 	leds_20
 };
 
+//! The maximum power of one strip in milliamps for 5V power supply.
+#define MAX_POWER_MA			57000 //! 95% of 300W @ 5V = 57A
+
+//! Common commercial RGBW white led temperature.
+enum whiteTemp {
+	WARM_WHITE                  = 2700, //!<Warm white.
+	NATURAL_WHITE               = 4000, //!<Natural white.
+	COLD_WHITE                  = 6000  //!<Cold white.
+};
+
+//! The custom rgbw strcuture
+const Rgbw rgbw = Rgbw(
+	NATURAL_WHITE,				//!<The temperature of white LED chose for the strip.
+	kRGBWBoostedWhite,			//!<The methode of rendering white in RGBW leds.
+	W3							//!<The white byte position.
+);
+
+/** @} Leds strips */
+
 /**
  * @name Patterns
- * @brief Leds patterns
  * @{
 */
 
-/**
- * nightPattern[]
- * @brief Night led pattern.
-*/
+//! Night led pattern.
 const uint8_t nightPattern_1[] = { \
 	0, 9, 17, 26, 34, 43, 51, 60, 68, 77, 85, 94, 102, 111, 119, 128, 136, 145, 153, 162, 170, 179, 187, 196, 204, 213, 221, 230, 238, 247 \
 };
@@ -207,11 +221,36 @@ const uint8_t * nightPatterns[] = {
 
 /** @} Patterns */
 
-
 /**
- * \fn void setup()
- * \brief starup function.
-*/
+ * @name Switches
+ * @{
+ */
+
+//! Number of switches (max 4).
+#define NUM_SWITCHES 1
+
+//! Array with swiches states.
+int switchStates[] = {
+	HIGH,
+	HIGH,
+	HIGH,
+	HIGH
+};
+
+//! Array with switches times.
+unsigned long switchTimes[]   = {
+	0,
+	0,
+	0,
+	0
+};
+
+//! Long pulse duration in ms
+#define LONG_PULSE				1000
+
+/** @} Switches */
+
+//! setup.
 void setup() {
 	//! add some delays in case of setup failure.
 	delay(2000);
@@ -224,9 +263,25 @@ void setup() {
 	FastLED.addLeds<SK6812, DATA_PIN_5, RGB>(leds[4], numLeds[4]).setRgbw(rgbw);
 	FastLED.addLeds<SK6812, DATA_PIN_6, RGB>(leds[5], numLeds[5]).setRgbw(rgbw);
 	FastLED.addLeds<SK6812, DATA_PIN_7, RGB>(leds[6], numLeds[6]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_8, RGB>(leds[7], numLeds[7]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_9, RGB>(leds[8], numLeds[8]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_10, RGB>(leds[9], numLeds[9]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_11, RGB>(leds[10], numLeds[10]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_12, RGB>(leds[11], numLeds[11]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_13, RGB>(leds[12], numLeds[12]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_14, RGB>(leds[13], numLeds[13]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_15, RGB>(leds[14], numLeds[14]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_16, RGB>(leds[15], numLeds[15]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_17, RGB>(leds[16], numLeds[16]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_18, RGB>(leds[17], numLeds[17]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_19, RGB>(leds[18], numLeds[18]).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_20, RGB>(leds[19], numLeds[19]).setRgbw(rgbw);
 
 	//! setup input pins
 	pinMode(switchPins[0], INPUT_PULLUP);
+	// pinMode(switchPins[1], INPUT_PULLUP);
+	// pinMode(switchPins[2], INPUT_PULLUP);
+	// pinMode(switchPins[3], INPUT_PULLUP);
 
 	//! additional setups for leds rendering.
 	FastLED.clear();
@@ -234,10 +289,7 @@ void setup() {
 	FastLED.setMaxPowerInVoltsAndMilliamps(5, MAX_POWER_MA);
 }
 
-/**
- * \fn void loop()
- * \brief Main loop.
-*/
+//! loop.
 void loop() {
 	//! temporary switch state.
 	int state;

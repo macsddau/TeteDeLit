@@ -20,27 +20,12 @@ var TeteDeLit_8h =
     [ "DATA_PIN_7", "TeteDeLit_8h.html#a4ab8e0fb02c73359cf16c78f412b8ccb", null ],
     [ "DATA_PIN_8", "TeteDeLit_8h.html#a8c0aeb9ad8e1eee41e8990f68b228f04", null ],
     [ "DATA_PIN_9", "TeteDeLit_8h.html#ac9a67c7608f9e7a0fa3db35f2b7ef59f", null ],
-    [ "LIGHT_BRIGTHNESS", "TeteDeLit_8h.html#a97425bb4347fd7753f34a07c8e98015a", null ],
-    [ "LIGHT_STATE_COUNT", "TeteDeLit_8h.html#afdc30bf8b0b44596c72c94d191d48353", null ],
-    [ "LONG_PULSE", "TeteDeLit_8h.html#a7f8cd8ad7987ee77f884dd9537c6ac49", null ],
-    [ "MAX_POWER_MA", "TeteDeLit_8h.html#a44bec24d21dd3edce2ad5eb0b70da963", null ],
     [ "SWITCH_PIN_1", "TeteDeLit_8h.html#a34997cb36c902a6cf25d5363f4457488", null ],
     [ "SWITCH_PIN_2", "TeteDeLit_8h.html#ab4a03b0b60bbcb8ed9fdc233abd45320", null ],
     [ "SWITCH_PIN_3", "TeteDeLit_8h.html#ab14cf89cc4288c9289d70a9fdf51f72b", null ],
     [ "SWITCH_PIN_4", "TeteDeLit_8h.html#a4209ac1def55f35d129e14f16690f1df", null ],
-    [ "lightState", "TeteDeLit_8h.html#a0453581774a68c9d0766fc8ab7a2524d", [
-      [ "LIGHT_OFF", "TeteDeLit_8h.html#a0453581774a68c9d0766fc8ab7a2524dafe86dd14e81e1c145562ecf1daf98b30", null ],
-      [ "LIGHT_NIGHT", "TeteDeLit_8h.html#a0453581774a68c9d0766fc8ab7a2524da00aeb2fb0eca73bc930e6c979933b258", null ],
-      [ "LIGHT_ON", "TeteDeLit_8h.html#a0453581774a68c9d0766fc8ab7a2524dab51f396c46963682ee6170db4991f4e8", null ]
-    ] ],
-    [ "whiteTemp", "TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780", [
-      [ "WARM_WHITE", "TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780a5beac0ff19b0fb410c2f82118ccf8da1", null ],
-      [ "NATURAL_WHITE", "TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780a456aa45276b0211a7221985012a41527", null ],
-      [ "COLD_WHITE", "TeteDeLit_8h.html#a49e67bd74eb01ef5ad0e2338ebd0e780aeeffb1c00b2b08a0fad2e7590c13b221", null ]
-    ] ],
     [ "setLightNight", "TeteDeLit_8h.html#ac04f7fef089db3881b36de38bd9d8be4", null ],
     [ "setLightOff", "TeteDeLit_8h.html#a71ed150b2e85cdecff7cd67f05ddd25e", null ],
     [ "setLightOn", "TeteDeLit_8h.html#ad06d5b267a12bd90de8968489af121ca", null ],
-    [ "rgbw", "TeteDeLit_8h.html#a9183a7382aaea063089e8d90a94e9894", null ],
     [ "switchPins", "TeteDeLit_8h.html#a4ca00b1340bbbc999d22c6be9f3f2741", null ]
 ];
