@@ -6,6 +6,7 @@
 */
 #include <TeteDeLit.h>
 #include <Arduino.h>
+#include <FastLED.h>
 
 /**
  * @name Lights

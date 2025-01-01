@@ -7,8 +7,6 @@
 #ifndef TETEDELIT_H
 #define TETEDELIT_H
 
-#include <FastLED.h>
-
 //! The GPIO pin used for leds strips
 #define DATA_PIN_1				15
 #define DATA_PIN_2				13
