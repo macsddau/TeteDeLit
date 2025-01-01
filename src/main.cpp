@@ -226,6 +226,14 @@ const uint8_t * nightPatterns[] = {
  * @{
  */
 
+//! Array with switches pins.
+const int switchPins[] = {
+	SWITCH_PIN_1,
+	SWITCH_PIN_2,
+	SWITCH_PIN_3,
+	SWITCH_PIN_4
+};
+
 //! Number of switches (max 4).
 #define NUM_SWITCHES 1
 
@@ -249,6 +257,19 @@ unsigned long switchTimes[]   = {
 #define LONG_PULSE				1000
 
 /** @} Switches */
+
+/**
+ * @name Prototypes
+ * @{
+*/
+
+void setLightOff(CRGB * pleds, const int * numLeds, uint8_t numStrips);
+
+void setLightNight(CRGB * pleds, const int * numLeds, uint8_t numStrips, const uint8_t * pattern);
+
+void setLightOn(CRGB * pleds, const int * numLeds, uint8_t numStrips);
+
+/** @} Protoptypes */
 
 //! setup.
 void setup() {
@@ -339,4 +360,37 @@ void loop() {
 
 	//! render the light according to settings and user action.
 	FastLED.show();
+}
+
+//! Turn off the light
+void setLightOff(   CRGB * pleds,
+                    const int * numLeds,
+                    uint8_t numStrips) {
+  	/** Fil the leds array with black.   */
+    for (uint8_t strip = 0; strip < numStrips; strip++)
+  	    fill_solid(&pleds[strip], numLeds[strip], CRGB::Black);
+}
+
+//! Turn on the light in night mode
+void setLightNight( CRGB * pleds,
+                    const int * numLeds,
+                    uint8_t numStrips,
+                    const uint8_t * pattern) {
+    /** Fil the leds array with red. */
+    for (uint8_t strip = 0; strip < numStrips; strip++)
+  	    fill_solid(&pleds[strip], numLeds[strip], CRGB::Red);
+
+    /** Apply the night pattern to the leds array. */
+    for (uint8_t strip = 0; strip < numStrips; strip++)
+        for (int led = 0; led < numLeds[strip]; led++)
+            (&pleds[strip])[led].nscale8((&pattern[strip])[led]);
+}
+
+//! Turn on the light
+void setLightOn(    CRGB * pleds,
+                    const int * numLeds,
+                    uint8_t numStrips) {
+    /** Fil the leds array with white. */
+    for (uint8_t strip = 0; strip < numStrips; strip++)
+  	    fill_solid(&pleds[strip], numLeds[strip], CRGB::White);
 }

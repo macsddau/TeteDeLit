@@ -48,7 +48,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"TeteDeLit_8cpp.html"
+"TeteDeLit_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

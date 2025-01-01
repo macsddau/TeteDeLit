@@ -23,9 +23,5 @@ var TeteDeLit_8h =
     [ "SWITCH_PIN_1", "TeteDeLit_8h.html#a34997cb36c902a6cf25d5363f4457488", null ],
     [ "SWITCH_PIN_2", "TeteDeLit_8h.html#ab4a03b0b60bbcb8ed9fdc233abd45320", null ],
     [ "SWITCH_PIN_3", "TeteDeLit_8h.html#ab14cf89cc4288c9289d70a9fdf51f72b", null ],
-    [ "SWITCH_PIN_4", "TeteDeLit_8h.html#a4209ac1def55f35d129e14f16690f1df", null ],
-    [ "setLightNight", "TeteDeLit_8h.html#ac04f7fef089db3881b36de38bd9d8be4", null ],
-    [ "setLightOff", "TeteDeLit_8h.html#a71ed150b2e85cdecff7cd67f05ddd25e", null ],
-    [ "setLightOn", "TeteDeLit_8h.html#ad06d5b267a12bd90de8968489af121ca", null ],
-    [ "switchPins", "TeteDeLit_8h.html#a4ca00b1340bbbc999d22c6be9f3f2741", null ]
+    [ "SWITCH_PIN_4", "TeteDeLit_8h.html#a4209ac1def55f35d129e14f16690f1df", null ]
 ];
