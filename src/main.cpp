@@ -278,32 +278,32 @@ void setup() {
 	delay(2000);
 
 	//! add leds arrays to led controller with our custom rgbw definition.
-	FastLED.addLeds<SK6812, DATA_PIN_1, RGB>(leds[0], numLeds[0]).setRgbw(rgbw);
-	FastLED.addLeds<SK6812, DATA_PIN_2, RGB>(leds[1], numLeds[1]).setRgbw(rgbw);
-	FastLED.addLeds<SK6812, DATA_PIN_3, RGB>(leds[2], numLeds[2]).setRgbw(rgbw);
-	FastLED.addLeds<SK6812, DATA_PIN_4, RGB>(leds[3], numLeds[3]).setRgbw(rgbw);
-	FastLED.addLeds<SK6812, DATA_PIN_5, RGB>(leds[4], numLeds[4]).setRgbw(rgbw);
-	FastLED.addLeds<SK6812, DATA_PIN_6, RGB>(leds[5], numLeds[5]).setRgbw(rgbw);
-	FastLED.addLeds<SK6812, DATA_PIN_7, RGB>(leds[6], numLeds[6]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_8, RGB>(leds[7], numLeds[7]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_9, RGB>(leds[8], numLeds[8]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_10, RGB>(leds[9], numLeds[9]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_11, RGB>(leds[10], numLeds[10]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_12, RGB>(leds[11], numLeds[11]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_13, RGB>(leds[12], numLeds[12]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_14, RGB>(leds[13], numLeds[13]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_15, RGB>(leds[14], numLeds[14]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_16, RGB>(leds[15], numLeds[15]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_17, RGB>(leds[16], numLeds[16]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_18, RGB>(leds[17], numLeds[17]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_19, RGB>(leds[18], numLeds[18]).setRgbw(rgbw);
-	// FastLED.addLeds<SK6812, DATA_PIN_20, RGB>(leds[19], numLeds[19]).setRgbw(rgbw);
+	FastLED.addLeds<SK6812, DATA_PIN_1, RGB>(leds_1, NUM_LEDS_1).setRgbw(rgbw);
+	FastLED.addLeds<SK6812, DATA_PIN_2, RGB>(leds_2, NUM_LEDS_2).setRgbw(rgbw);
+	FastLED.addLeds<SK6812, DATA_PIN_3, RGB>(leds_3, NUM_LEDS_3).setRgbw(rgbw);
+	FastLED.addLeds<SK6812, DATA_PIN_4, RGB>(leds_4, NUM_LEDS_4).setRgbw(rgbw);
+	FastLED.addLeds<SK6812, DATA_PIN_5, RGB>(leds_5, NUM_LEDS_5).setRgbw(rgbw);
+	FastLED.addLeds<SK6812, DATA_PIN_6, RGB>(leds_6, NUM_LEDS_6).setRgbw(rgbw);
+	FastLED.addLeds<SK6812, DATA_PIN_7, RGB>(leds_7, NUM_LEDS_7).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_8, RGB>(leds_8, NUM_LEDS_8).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_9, RGB>(leds_9, NUM_LEDS_9).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_10, RGB>(leds_10, NUM_LEDS_10).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_11, RGB>(leds_11, NUM_LEDS_11).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_12, RGB>(leds_12, NUM_LEDS_12).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_13, RGB>(leds_13, NUM_LEDS_13).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_14, RGB>(leds_14, NUM_LEDS_14).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_15, RGB>(leds_15, NUM_LEDS_15).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_16, RGB>(leds_16, NUM_LEDS_16).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_17, RGB>(leds_17, NUM_LEDS_17).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_18, RGB>(leds_18, NUM_LEDS_18).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_19, RGB>(leds_19, NUM_LEDS_19).setRgbw(rgbw);
+	// FastLED.addLeds<SK6812, DATA_PIN_20, RGB>(leds_20, NUM_LEDS_20).setRgbw(rgbw);
 
 	//! setup input pins
-	pinMode(switchPins[0], INPUT_PULLUP);
-	// pinMode(switchPins[1], INPUT_PULLUP);
-	// pinMode(switchPins[2], INPUT_PULLUP);
-	// pinMode(switchPins[3], INPUT_PULLUP);
+	pinMode(SWITCH_PIN_1, INPUT_PULLUP);
+	// pinMode(SWITCH_PIN_2, INPUT_PULLUP);
+	// pinMode(SWITCH_PIN_3, INPUT_PULLUP);
+	// pinMode(SWITCH_PIN_4, INPUT_PULLUP);
 
 	//! additional setups for leds rendering.
 	FastLED.clear();
