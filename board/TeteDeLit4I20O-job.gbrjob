@@ -3,23 +3,23 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.7"
+      "Version": "8.0.7-8.0.7-0~ubuntu24.04.1"
     },
-    "CreationDate": "2024-12-29T04:50:49+01:00"
+    "CreationDate": "2025-01-02T00:56:24+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "TeteDeLit",
-      "GUID": "54657465-4465-44c6-9974-2e6b69636164",
+      "Name": "TeteDeLit4I20O",
+      "GUID": "54657465-4465-44c6-9974-344932304f2e",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 71.22,
-      "Y": 50.9
+      "X": 78.79,
+      "Y": 97.84
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
-    "Finish": "None"
+    "Finish": "Not specified"
   },
   "DesignRules": [
     {
@@ -34,22 +34,32 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "TeteDeLit-F_Cu.gbr",
+      "Path": "TeteDeLit4I20O-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "TeteDeLit-B_Cu.gbr",
+      "Path": "TeteDeLit4I20O-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "TeteDeLit-F_Silkscreen.gbr",
+      "Path": "TeteDeLit4I20O-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "TeteDeLit-Edge_Cuts.gbr",
+      "Path": "TeteDeLit4I20O-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "TeteDeLit4I20O-B_Mask.gbr",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "TeteDeLit4I20O-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
